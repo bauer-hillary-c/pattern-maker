@@ -1,6 +1,14 @@
-<h1>Editing Pattern</h1>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h1>Edit Pattern</h1>
+  </div>
 
-<%= render 'form', pattern: @pattern %>
+  <div class="panel-body">
+    <%= render 'form', pattern: @pattern %>
+  </div>
 
-<%= link_to 'Show', @pattern %> |
-<%= link_to 'Back', patterns_path %>
+  <div class="panel-footer">
+    <%= link_to 'Show', @pattern, class: "btn btn-default" %> |
+    <%= link_to 'Back', patterns_path, class: "btn btn-default" %>
+  </div>
+</div>
